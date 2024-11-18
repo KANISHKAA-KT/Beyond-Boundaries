@@ -1,19 +1,21 @@
-# HTML Login Page
+# Beyond Boundaries Travel Agency Website - Login Page
 
 ## Description
-This is a basic HTML and CSS login page that I built as part of my web development learning journey. The project demonstrates a simple yet functional login form with basic styling.
+This is the initial phase of the "Beyond Boundaries" Travel Agency Website. Currently, I am working on the **Login Page**, where users can log in to their accounts to access various features such as booking trips, exploring destinations, and managing bookings.
+
+This project is built with basic **HTML** and **CSS** for the structure and styling of the login form.
 
 ## Features
-- **Login Form**: Includes fields for username and password.
-- **Styling**: Designed with CSS for a clean and minimal layout.
-- **Beginner-Friendly**: A simple project focused on fundamentals.
+- **Login Form**: A simple form for users to enter their credentials (username and password).
+- **Basic Styling**: Clean and simple design with CSS for styling the login form.
 
 ## Technologies Used
 - **HTML5**: To structure the login form.
-- **CSS3**: For styling and layout.
+- **CSS3**: For styling and layout of the login page.
 
 ## How to Use
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/your-username/HTML-Login-Page.git
+   git clone https://github.com/your-username/beyond-boundaries-travel.git
+
 
