@@ -10,17 +10,18 @@ body{
     align-items: center;
     min-height: 100vh;
     /*background-color: seagreen;*/ 
-background: linear-gradient(to top,rgba(0,0,0,0.2)100%,rgba(0,0,0,0.2)100%),url('valparai.jpg');
+background: linear-gradient(to top,rgba(0,0,0,0.5)70%,rgba(0,0,0,0.5)70%),url('travel\ 1.jpg');
 
 background-size: cover;
 background-position: center ;
 
 }
 .wrapper{
+  right: auto;
     width:400px;
     background: transparent;
-    border: 2px solid rgba(255,255,255,.2);
-    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255,255,255,.5);
+    backdrop-filter: blur(5px);
     /*background: purple;*/
     color:whitesmoke; 
     border-radius: 12px;
@@ -38,6 +39,37 @@ background-position: center ;
     height: 50px;
     /*background-color: burlywood;*/
      margin: 30px 0;}
+  .button-box{
+    width:220px;
+    margin:35px auto;
+    position:relative;
+    border-radius: transparent;
+
+  }
+  .toggle-button{
+    padding: 10px 30px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    background: transparent;
+    position: relative;
+    color:white;
+
+  } 
+
+  #btn{
+    top:0;
+    bottom:0;
+    position: absolute;
+    height:100%;
+    width:110px;
+    border-radius: 30px;
+    background-color:#3f0000af;
+    border: 2px solid rgba(255,255,255,.3);
+    transition:.5s;
+
+  }
+
 .input-box input{
     width:100%;
     height:100%;
@@ -47,15 +79,18 @@ background-position: center ;
     border:2px solid rgba(255,255,255,.2);
     border-radius: 40px;
     font-size: 16px;
-    color:white;
     padding: 20px 45px 20px 20px;
+    color:#fff;
 }
 .input-box i{
     position: absolute;
-    right:20px;
+    right:15px;
     top:30%;
     transform: translate(-50%);
     font-size: 20px;
+}
+.input-box ::placeholder{
+  color: #fff;
 }
 .wrapper .remember-forgot{
     display:flex;
@@ -83,10 +118,10 @@ background-position: center ;
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color:#3f0000af;
     font-weight: 600;
   }
  .wrapper .register-link{
@@ -95,10 +130,9 @@ background-position: center ;
     margin: 20px 0 15px;
   
   }
-  .input-box input::placeholder{
-    color: #fff;}
+  
   .register-link p a{
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: 600;
   }
@@ -106,10 +140,10 @@ background-position: center ;
     text-decoration: underline;
   }
   .wrapper .btn:hover{
-    background-color: rgb(114, 175, 114);
+    background-color:#3f0000af;
     color:white;
+    box-shadow: 1px 1px #F5F5F5;
+    transition: ease-in-out;
   }
-  .input-box input:hover{
-    background-color: rgb(114, 175, 114);
-    color:white;
-  }
+
+  
