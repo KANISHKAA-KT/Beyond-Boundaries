@@ -1,0 +1,351 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    background-color: rgb(240, 248, 255);
+    overflow-x: hidden;
+    background: linear-gradient(to top,rgba(240,248,255,)70%,rgba(240, 248, 255,)70%),url('globe.avif');
+}
+
+header {
+    background-image: url(1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background: #f0f8ff;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 128, 128);
+    background-color: aliceblue;
+    padding: 10px 35px;
+    border-radius: 30px;
+    border: 2px solid rgba(0, 128, 128, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: teal;
+    color: whitesmoke;
+}
+
+.packages {
+    display: flex;
+    justify-content: space-between; /* Adds even spacing between items */
+    gap: 25px; /* Adds consistent spacing between cards */
+    padding: 20px;
+}
+
+.package-card {
+    position: relative;
+    flex: 1 1 calc(30% - 40px); /* Allows for 3 cards per row with spacing */
+    max-width: 300px; /* Optional: Set max width for consistency */
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.package-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.package-card span {
+    font-size: 1rem;
+    background-color: rgba(0, 128, 128, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.package-card{
+  transition: transform 0.2s; /* Animation duration */
+  transform: scale(1); /* Initial scale */
+}
+
+.package-card:active{
+  transform: scale(1.1); /* Scale on click */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .package-card {
+        flex: 1 1 calc(45% - 20px); /* 2 cards per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .package-card {
+        flex: 1 1 100%; /* Full-width cards for mobile screens */
+    }
+}
+
+.marquee-container {
+    background-color: rgba(0, 128, 128, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 8px; /* Rounded edges for the marquee container */
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+marquee {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: rgb(243, 252, 252); /* Text color inside the marquee */
+}
+.aboutus {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.aboutus h2 {
+    font-size: 2em;
+    color: rgb(0, 128, 128);
+    margin-bottom: 10px;
+}
+
+.aboutus h4 {
+    font-size: 0.9em;
+    color: grey;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 5px 5px;
+    font-size: 0.9em;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+    color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+   background-color:aliceblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.testimonial-box {
+    width: 30%;
+    border: 1px solid #5e5c5c;
+    padding: 10px;
+    display: inline;
+}
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.name {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.rating {
+    color: gold;
+}
+h2 {
+    font-size: 2em;
+    color: rgb(0, 128, 128);
+    margin-bottom: 10px;
+}
+p{
+    font-size: 1em;
+    justify-content: space-between;
+    color:grey ;
+    font-style: italic;
+    
+}
+.achievement{
+    display: flex;
+    justify-content: space-around;
+   background-color:aliceblue;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Adds even spacing between items */
+    gap: 25px; /* Adds consistent spacing between cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Footer Styling */
+.footer {
+    background-color:teal;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+.footer p{
+    color: #fff;
+}
+
+/* Company Info */
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7c41c;
+}
+
+.footer-description {
+    font-size: 14px;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+/* Quick Links */
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-link-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.footer-link-list li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-link-list li a {
+    color: #f7c41c;
+    text-decoration: none;
+}
+
+/* Contact Information */
+.footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-contact-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    color: #f7c41c;
+    text-decoration: none;
+}
+
+/* Social Media */
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: #f7c41c;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Newsletter Subscription */
+.footer-newsletter {
+    margin-bottom: 20px;
+}
+
+.footer-newsletter-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter form {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-newsletter button {
+    padding: 10px 15px;
+    background-color: #f7c41c;
+    color: teal;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Copyright */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
