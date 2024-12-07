@@ -1,7 +1,7 @@
-# Beyond Boundaries Travel Agency Website - Login Page
+# Beyond Boundaries Travel Agency Website 
 
 ## Description
-This is the initial phase of the "Beyond Boundaries" Travel Agency Website. Currently, I am working on the **Login Page**, where users can log in to their accounts to access various features such as booking trips, exploring destinations, and managing bookings.
+This is the initial phase of the "Beyond Boundaries" Travel Agency Website. Currently, I am working on the **Home Page**, where users can log in to their accounts to access various features such as booking trips, exploring destinations, and managing bookings.
 
 This project is built with basic **HTML** and **CSS** for the structure and styling of the login form.
 
